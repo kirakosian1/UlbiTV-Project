@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/", // куда производится сборка (наважно, так как есть сборка через вебпак)
+      "noImplicitAny": true, // не позволяет использовать переменные без указания явного типа
+        "module": "ESNext",
+        "target": "es5", // в какую сборку компелируем, чтобы поддерживало большинство браузеров
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node", // node || classic
+        "esModuleInterop": true,
+        "strictNullChecks": true, // !!! NOT ULBI COURSE - избавились от ошибки в IMPORT
+        // esModuleInterop позволяет работать с пакетами, которые используют 
+        // commonJS как с обычными пакетами с помощью import (require() module.exports) = common js
+        "allowSyntheticDefaultImports": true
+        // позволяет использовать импорты без * === import * as path from 'path';
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    }
+  }
