@@ -7,6 +7,10 @@
         "jsx": "react-jsx",
         "allowJs": true,
         "moduleResolution": "node", // node || classic
+        "baseUrl": ".",
+        "paths": {
+          "*": ["./src/*"]
+        },
         "esModuleInterop": true,
         "strictNullChecks": true, // !!! NOT ULBI COURSE - избавились от ошибки в IMPORT
         // esModuleInterop позволяет работать с пакетами, которые используют 
